@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'GlobalMed',
+    'rest_reservas',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
