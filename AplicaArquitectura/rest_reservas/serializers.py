@@ -15,3 +15,18 @@ class ReservaSerializer(serializers.ModelSerializer):
             'comentario',
             'doctor',
             'departamento']
+
+class DoctoresSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = doctores
+        fields = [
+            'id',
+            'nombre',
+            'id_dep']
+
+class DepartamentosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = departamentos
+        fields = [
+            'id',
+            'nombre_dep']
